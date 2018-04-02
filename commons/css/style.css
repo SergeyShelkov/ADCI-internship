@@ -51,7 +51,7 @@ body {
     font-size: 14px;
 }
 
-header {
+header, footer {
 	background: #353436;
 }
 
@@ -130,9 +130,8 @@ header {
 	border: none;
 }
 
-.slider { 
-	width: 1240px;
-	margin: 0 auto;
+.item {
+	height: 100%;
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
@@ -150,6 +149,10 @@ header {
 
 .owl-dot.active span {
 	background-color: #e2d1a6 !important;
+}
+
+.slider {
+	position: relative;
 }
 
 .slider-text {
@@ -181,13 +184,102 @@ header {
 	width: 430px;
 }
 
+.box-info-container {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: 2;
+}
+
+.box-btn-container {
+	text-align: center;
+	position: relative;
+	bottom: -2px;
+}
+
+.show-box-btn {
+	background: url(../images/arrow-up.png) no-repeat white 50% 50%;
+	width: 85px;
+	height: 28px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.hide-box-btn {
+	background: url(../images/arrow-down.png) no-repeat white 50% 50%;
+	
+}
+
+.box-info {
+	width: 100%;
+	background: #fff;
+	display: none;
+	margin: 0 auto;
+	width: 1200px;
+	
+}
+
+.box-info-item {
+	    width: 360px;
+    	display: inline-block;
+    	padding: 18px;
+	height: 100%;
+}
+
+.box-item-title {
+	display: inline-block;
+	font-family: "Playfair Display";
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 30px;
+	width: 345px;
+	height: 49px;
+	padding-bottom: 9px;
+}
+
+.box-item-paragraph {
+	width: 341px;
+	font-family: "Open Sans";
+	font-size: 16px;
+	line-height: 24.99px;
+	padding-bottom: 18px;
+	padding-top: 9px;
+}
+
+.box-item-link {
+	float: right;
+	text-decoration: none;
+	color: #000;
+}
+
+.box-item-link:hover {
+	text-decoration: underline;
+}
+
+.first-block {
+	background: #e2d1a6;
+}
+
+.first-block a {
+	color: white;
+}
+
+.second-block {
+	background: #ffffff;
+}
+
+.third-block {
+	background: #000000;
+	color: #ffffff;
+}
+
+.third-block a {
+	color: white;
+}
+
 .footer {
 	margin: 0 auto;
 	width: 928px;
-}
-
-.footer-container {
-	background: #353436; 
 }
 
 .footer-text {
@@ -219,7 +311,6 @@ header {
 .footer-newsletter   {
 	display: inline-block;
 }
-
 
 .footer-form {
 	width: 184px;
